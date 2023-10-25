@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" type="text/css" href="css/cusuario.css">
+</head>
+<body>
+    <div class="container-de-cadastro">
+        <h2>Cadastro de Usuário</h2>
+        <form class="formulario-de-cadastro" action="./php/cadastrouse.php" method="POST">
+            <div class="grupo-de-formulario">
+                <label for="idUsuario">ID do Usuário:</label>
+                <input type="text" id="idUsuario" name="idUsuario" required>
+            </div>
+            <div class="grupo-de-formulario">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="grupo-de-formulario">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="grupo-de-formulario">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="grupo-de-formulario">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="grupo-de-formulario">
+                <label for="tipoUsuario">Tipo de Usuário:</label>
+                <select id="tipoUsuario" name="tipoUsuario">
+                    <option value="administrador">Administrador</option>
+                    <option value="tecnico">Técnico</option>
+                    <option value="estagiario">Estagiário</option>
+                </select>
+            </div>
+            <button class="botao-de-cadastro" type="submit">Cadastrar</button>
+            <br>
+            <button class="botao-de-cadastro" type="reset">Limpar</button>
+            <br>
+            <button class="botao-de-cadastro" type="submit" formaction="./php/consultause.php">Consultar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de OS</title>
+    <link rel="stylesheet" type="text/css" href="css/caOS.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Cadastro de OS</h2>
+        <form class="login-form" action="./php/cadastroos.php" method="POST">
+            <div class="form-group">
+                <label for="os">Os:</label>
+                <input type="text" id="os" name="os" required>
+            </div>
+            <div class="form-group">
+                <label for="equipamento">Dispositivo:</label>
+                <input type="text" id="equipamento" name="equipamento" required>
+            </div>
+            <div class="form-group">
+                <label for="serviço">Serviço:</label>
+                <input type="tel" id="serviço" name="serviço" required>
+            </div>
+            <div class="form-group">
+                <label for="tecnico">Tecnico:</label>
+                <input type="text" id="tecnico" name="tecnico" required>
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" name="valor" required>
+            </div>
+            <div class="form-group">
+                <label for="idcliente">ID do Cliente:</label>
+                <input type="text" id="idcliente" name="idcliente" required>
+            </div>
+            <div class="form-group">
+                <label for="defeito">Defeito:</label>
+                <textarea id="defeito" name="defeito" rows="4" cols="50" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="data_os">Data e Hora:</label>
+                <input type="datetime-local" id="data_os" name="data_os" required>
+            </div>
+            <button class="login-btn" type="submit">Cadastrar</button>
+            <br>
+            <button class="login-btn" type="reset">Limpar</button>
+            <br>
+            <button class="login-btn" type="submit" formaction="php/consultaos.php">Consultar</button>
+        </form>
+    </div>
+</body>
+</html>
